@@ -26,3 +26,7 @@ while (monthNumber <= monthsToPrint) {
   console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
   monthNumber++;
 }
+
+for(var trainNumber = 1; trainNumber <= trainsOperational; trainNumber++){
+  console.log("Train #" + trainNumber + " is running");
+}
