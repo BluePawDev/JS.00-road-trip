@@ -40,3 +40,6 @@ STRINGS
     Example: var sentence = "antidisestablishmentarianism is fun to say!";
               sentence.charAt(11);
     Result: "b"
+
+WHILE LOOPS
+  
