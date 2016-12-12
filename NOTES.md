@@ -31,4 +31,12 @@ STRINGS
   Example: "antidisestablishmentarianism".length
   Result: in console.log would be 28
   NOTE: .length counts spaces and non-alpha characters too
-  
+
+  Characters within Strings
+    Each position in a string has a numbered index begining with 0
+
+  charAt()
+    Retrieves the character at a specific index numbered
+    Example: var sentence = "antidisestablishmentarianism is fun to say!";
+              sentence.charAt(11);
+    Result: "b"
