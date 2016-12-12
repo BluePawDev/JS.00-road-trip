@@ -30,3 +30,7 @@ while (monthNumber <= monthsToPrint) {
 for(var trainNumber = 1; trainNumber <= trainsOperational; trainNumber++){
   console.log("Train #" + trainNumber + " is running");
 }
+
+for(myNum = 5; myNum >=1; myNum--){
+  console.log(myNum);
+}
