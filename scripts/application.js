@@ -34,3 +34,10 @@ for(var trainNumber = 1; trainNumber <= trainsOperational; trainNumber++){
 for(myNum = 5; myNum >=1; myNum--){
   console.log(myNum);
 }
+
+
+var operationalTrains = 8;
+var totalTrains = 12;
+for(var stoppedTrains = operationalTrains + 1; stoppedTrains <= totalTrains; stoppedTrains++){
+  console.log("Train #" + stoppedTrains + " is not running");
+}
