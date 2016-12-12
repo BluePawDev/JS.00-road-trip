@@ -4,8 +4,9 @@ while (myNumber <= 5) {
   myNumber++;
 }
 
+var trainsOperational = 10;
 var trainNumber = 1;
-while (trainNumber <= 8) {
+while (trainNumber <= trainsOperational) {
   console.log("Train #" + trainNumber + " is running.");
   trainNumber++;
 }
