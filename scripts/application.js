@@ -74,9 +74,23 @@
 // }
 
 // IF...ELSE using Boolean Flags in Conditionals
-var parkIsOpen = true;
-if (parkIsOpen === true) {
-  console.log("Welcome to the Badlands National Park! Try to enjoy your stay.");
-} else {
-  console.log("Sorry, the Badlands are particularly bad today. We're closed!");
-}
+// var parkIsOpen = true;
+// if (parkIsOpen === true) {
+//   console.log("Welcome to the Badlands National Park! Try to enjoy your stay.");
+// } else {
+//   console.log("Sorry, the Badlands are particularly bad today. We're closed!");
+// }
+
+// ELSE...IF: when two conditions just aren't enough
+// IF -> ELSE IF -> ELSE
+// NOTE: if ANY of the conditionals are met while working through the the block the remaining portion of the block will be entirely skipped
+var numSheep = 4;
+var monthsToPrint = 12;
+for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
+  if(numSheep > 10000) {
+    numSheep = numSheep/2;
+    console.log("Removing " + numSheep + " sheep from the population.");
+  }
+    numSheep *= 4;
+    console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
+  }
