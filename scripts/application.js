@@ -65,10 +65,18 @@
 // }
 
 // logs all even numbers in decending order from 10 to 2
-var num = 10;
-while (num > 0) {
-  if(num % 2 === 0){
-    console.log(num);
-  }
-  num--;
+// var num = 10;
+// while (num > 0) {
+//   if(num % 2 === 0){
+//     console.log(num);
+//   }
+//   num--;
+// }
+
+// IF...ELSE using Boolean Flags in Conditionals
+var parkIsOpen = true;
+if (parkIsOpen === true) {
+  console.log("Welcome to the Badlands National Park! Try to enjoy your stay.");
+} else {
+  console.log("Sorry, the Badlands are particularly bad today. We're closed!");
 }
