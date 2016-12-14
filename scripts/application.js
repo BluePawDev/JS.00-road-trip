@@ -96,23 +96,38 @@
 //   }
 
 //Complex Conditionals using && ||
-var numSheep = 4;
-var monthsToPrint = 12;
+// var numSheep = 4;
+// var monthsToPrint = 12;
+//
+// for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
+//
+//   if (monthNumber % 4 === 0) {
+//     var reduction = numSheep * 0.75;
+//     console.log("Removing " + reduction + " sheep from the population.");
+//     numSheep -= reduction;
+//   }
+//
+//   else if (numSheep > 10000) {
+//     var reduction = numSheep * 0.5;
+//     console.log("Removing " + reduction + " sheep from the population.");
+//     numSheep -= reduction;
+//   }
+//
+//   numSheep *= 4;
+//   console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
+// }
 
-for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
-
-  if (monthNumber % 4 === 0) {
-    var reduction = numSheep * 0.75;
-    console.log("Removing " + reduction + " sheep from the population.");
-    numSheep -= reduction;
+// FOR loop w/ IF...ELSEIF and && || Conditionals
+var totalGen = 19;
+var totalMW = 0;
+for (var currentGen = 1; currentGen <= totalGen; currentGen++) {
+  if(currentGen % 2 !== 0){
+    console.log("Generator #" + currentGen + " is off.");
+  } else if (currentGen % 2 === 0 && currentGen <= 4) {
+    totalMW += 62;
+    console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + totalMW + " MW!");
+  } else {
+    totalMW += 124;
+    console.log("Generator #" + currentGen + " is on, adding 124 MW, for a total of " + totalMW + " MW!");
   }
-
-  else if (numSheep > 10000) {
-    var reduction = numSheep * 0.5;
-    console.log("Removing " + reduction + " sheep from the population.");
-    numSheep -= reduction;
-  }
-
-  numSheep *= 4;
-  console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
 }
