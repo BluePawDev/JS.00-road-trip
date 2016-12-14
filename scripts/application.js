@@ -163,13 +163,23 @@
 //    typeof null --> returns "object"
 
 // CONFIRMATION LOOP
-var gotName = false;
-while(gotName === false){
-  var userName = prompt("What is your user name?");
-  if(confirm("Are you sure your user name is " + userName + "?")){
-    alert("What's up " + userName + "?");
-    gotName = true;
-  }
-}
+// var gotName = false;
+// while(gotName === false){
+//   var userName = prompt("What is your user name?");
+//   if(confirm("Are you sure your user name is " + userName + "?")){
+//     alert("What's up " + userName + "?");
+//     gotName = true;
+//   }
+// }
 
 // Confirmation Loop Practice
+
+
+var userAge = prompt("What's your age, user?");
+var ageIsCorrect = false;
+while(ageIsCorrect === false){
+  if(confirm("You entered " + userAge + ". Is that correct?")){
+    alert("Great! Your age is logged as " + userAge);
+    ageIsCorrect = true;
+  }
+}
