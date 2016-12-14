@@ -118,16 +118,58 @@
 // }
 
 // FOR loop w/ IF...ELSEIF and && || Conditionals
-var totalGen = 19;
-var totalMW = 0;
-for (var currentGen = 1; currentGen <= totalGen; currentGen++) {
-  if(currentGen % 2 !== 0){
-    console.log("Generator #" + currentGen + " is off.");
-  } else if (currentGen % 2 === 0 && currentGen <= 4) {
-    totalMW += 62;
-    console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + totalMW + " MW!");
-  } else {
-    totalMW += 124;
-    console.log("Generator #" + currentGen + " is on, adding 124 MW, for a total of " + totalMW + " MW!");
+// var totalGen = 19;
+// var totalMW = 0;
+// for (var currentGen = 1; currentGen <= totalGen; currentGen++) {
+//   if(currentGen % 2 !== 0){
+//     console.log("Generator #" + currentGen + " is off.");
+//   } else if (currentGen % 2 === 0 && currentGen <= 4) {
+//     totalMW += 62;
+//     console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + totalMW + " MW!");
+//   } else {
+//     totalMW += 124;
+//     console.log("Generator #" + currentGen + " is on, adding 124 MW, for a total of " + totalMW + " MW!");
+//   }
+// }
+// ALERT(), CONFIRM(), PROMPT()
+// confirm() "Cancel" returns FALSE
+// confirm() "OK" returns TRUE
+// prompt() can store responses in a var
+// Example: var userName = prompt("What is your user name?")
+// If "Cancel" is selected on prompt() it will return null
+// typeof userName would return "object" if "Cancel" is selected because null is a generic JS object
+
+// // prompt() Prompts for the user name
+// var userName = prompt("What is your user name?");
+// // If "Cancel" is selected will result in null and return "object"
+// // If string is entered and "OK" selected will return "string"
+// confirm("Are you sure your user name is " + userName + "?");
+// // If "Cancel" is selected will return a "FALSE" value
+// // If "OK" is selected will return a "TRUE" value
+// if(confirm(true)){
+//   console.log(userName);
+// } else {
+//   console.log("Confirm canceled");
+// }
+
+
+// typeof Method
+// Used to identify the "typeof" value inside a var or expression
+// Useful in checking a var's contents
+//    typeof true --> returns "boolean"
+//    typeof "That's not a valid entry" --> returns "string"
+//    typeof 42 --> returns "number"
+//    typeof undefined --> returns "undefined"
+//    typeof null --> returns "object"
+
+// CONFIRMATION LOOP
+var gotName = false;
+while(gotName === false){
+  var userName = prompt("What is your user name?");
+  if(confirm("Are you sure your user name is " + userName + "?")){
+    alert("What's up " + userName + "?");
+    gotName = true;
   }
 }
+
+// Confirmation Loop Practice
