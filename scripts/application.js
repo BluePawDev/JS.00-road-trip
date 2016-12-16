@@ -188,3 +188,17 @@
 // }
 
 //FUNCTIONS
+// What's a function for?
+// Give input to function --> function manipulates input --> outputs result
+// A function solves problems--step-by-step--that we need to do repeatedly
+// Example: summing two cubes
+// Syntax of the "summing two cubes" (non-function)
+// The "long way"...
+// var a = 4;
+// var b = 9;
+// var aCubed = a * a * a;
+// var bCubed = b * b * b;
+// var sum = aCubed + bCubed;
+// console.log(sum);
+// Wrapping code in a function allows us to reuse it without having to rewrite code
+// Syntax for basic function structure
