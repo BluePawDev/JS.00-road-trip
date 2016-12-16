@@ -201,20 +201,36 @@
 // var sum = aCubed + bCubed;
 // console.log(sum);
 // Wrapping code in a function allows us to reuse it without having to rewrite code
-// Syntax for basic function structure
-function sumOfCubes(a, b){
-  var aCubed = a * a * a;
-  var bCubed = b * b * b;
-  var sum = aCubed + bCubed;
-  return sum;
-}
-
+// // Syntax for basic function structure
+// function sumOfCubes(a, b){
+//   var aCubed = a * a * a;
+//   var bCubed = b * b * b;
+//   var sum = aCubed + bCubed;
+//   return sum;
+// }
+//
 // Calling the function
-sumOfCubes(4, 9);
+// sumOfCubes(4, 9);
+
+//or
+// console.log(sumOfCubes(4,9));
 
 // or
-console.log(sumOfCubes(4,9));
+// var mySum = sumOfCubes(5,6);
+// alert(mySum);
 
-// or
-var mySum = sumOfCubes(5,6);
-alert(mySum);
+// Writing Efficient Functions
+// Being concise helps conserve memory and limit storage operations
+// This is the same function written more efficiently below by elminating three vars
+// function sumOfCubes(a, b){
+//   return a * a * a + b * b * b;
+// }
+
+// We can also pass expressions as the parameters of a funciton
+// JS will evaluate and simplify the expression(s) before calling the funciton
+// Example: sumOfCubes(1 + 2, 3 + 5); results in sumOfCubes(3, 8);
+
+// We can also use vars as parameters
+// Example:
+// var x = 3;
+// sumOfCubes(x * 2, x * 4); results in sumOfCubes(6, 12);
