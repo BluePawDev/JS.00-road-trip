@@ -255,14 +255,35 @@
 
 // Refactoring for Efficiency and Legibility
 // From this...
-function mystery(x, y) {
-  var a = 4 * x * y;
-  var b = 3 * y + 5;
-  var c = a + b;
-  return c;
-}
+// function mystery(x, y) {
+//   var a = 4 * x * y;
+//   var b = 3 * y + 5;
+//   var c = a + b;
+//   return c;
+// }
 
 // To this...
-function mystery(x, y) {
-  return (4 * x * y) + (3 * y + 5);
-}
+// function mystery(x, y) {
+//   return (4 * x * y) + (3 * y + 5);
+// }
+
+// More Comples Functions
+// Function that counts the "E's" from a user-entered phrase
+
+countE();
+
+function countE(){
+  var phrase = prompt("Which phrase would you like to examine?");
+  if(typeof(phrase) !== "string"){
+    alert("That's not a valid entry!");
+    return false;
+  } else {
+    var eCount = 0;
+    for(var index = 0; index < phrase.length; index++){
+      if(phrase.charAt(index) === "e" || phrase.charAt(index) === "E")
+      eCount++;
+      }
+    alert("There are " + eCount + " e's in the phrase \"" + phrase + "\".");
+    return true;
+    }
+  }
