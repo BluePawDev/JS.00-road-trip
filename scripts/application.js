@@ -174,7 +174,15 @@
 
 // Confirmation Loop Practice
 // 1
-var userAge = prompt("What's your age, user?");
-var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
+// var userAge = prompt("What's your age, user?");
+// var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
 
 // 2
+var userAge = prompt("What's your age, user?");
+var ageIsCorrect = false;
+while(ageIsCorrect === false){
+  if(confirm("You entered  " + userAge + ". Is this correct?")){
+    alert("Great! Your age is logged as " + userAge + ".");
+    ageIsCorrect = true;
+  }
+}
