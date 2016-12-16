@@ -234,3 +234,21 @@
 // Example:
 // var x = 3;
 // sumOfCubes(x * 2, x * 4); results in sumOfCubes(6, 12);
+
+// Practice
+// function multiplyTrio(a, b, c){
+//   return a * b * c;
+// }
+// console.log(multiplyTrio(1,2,3));
+
+// Return larger of two values
+function maxOf2(a,b){
+  if(a > b){
+    return a;
+  } else if (b > a) {
+    return b;
+  } else {
+    return "a and b are equal";
+  }
+}
+console.log(maxOf2(3,3));
