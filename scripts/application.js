@@ -202,3 +202,19 @@
 // console.log(sum);
 // Wrapping code in a function allows us to reuse it without having to rewrite code
 // Syntax for basic function structure
+function sumOfCubes(a, b){
+  var aCubed = a * a * a;
+  var bCubed = b * b * b;
+  var sum = aCubed + bCubed;
+  return sum;
+}
+
+// Calling the function
+sumOfCubes(4, 9);
+
+// or
+console.log(sumOfCubes(4,9));
+
+// or
+var mySum = sumOfCubes(5,6);
+alert(mySum);
