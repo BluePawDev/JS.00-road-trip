@@ -242,13 +242,27 @@
 // console.log(multiplyTrio(1,2,3));
 
 // Return larger of two values
-function maxOf2(a,b){
-  if(a > b){
-    return a;
-  } else if (b > a) {
-    return b;
-  } else {
-    return "a and b are equal";
-  }
+// function maxOf2(a,b){
+//   if(a > b){
+//     return a;
+//   } else if (b > a) {
+//     return b;
+//   } else {
+//     return "a and b are equal";
+//   }
+// }
+// console.log(maxOf2(3,3));
+
+// Refactoring for Efficiency and Legibility
+// From this...
+function mystery(x, y) {
+  var a = 4 * x * y;
+  var b = 3 * y + 5;
+  var c = a + b;
+  return c;
 }
-console.log(maxOf2(3,3));
+
+// To this...
+function mystery(x, y) {
+  return (4 * x * y) + (3 * y + 5);
+}
