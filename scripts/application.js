@@ -354,3 +354,26 @@
 
 // Method: push()
 // rubyFam.push("Spot the Dog"); //inserts--or "pushes"--the specified new item into the array at the end of the array
+
+// Array Practice
+var list = [1, 2, 3, 7, 5, 6, 7, 8, 9];
+list[3] = 4; //correcting the sequence of the array
+
+var list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+list.push(10); //finishing the sequence of the array
+
+var values = ["Jason", 46, true];
+var bool = values.pop(); //removing the boolean from the array and storing it in the bool variable
+
+
+// Enter a line of code that declares a variable called infant and accesses the word "Baby" from eightiesMovies without making any changes to either element inside the array.
+var movie1 = [16, "Candles"];
+var movie2 = [3, "Men", "and", "a", "Baby"];
+var eightiesMovies = [movie1, movie2];
+var infant = eightiesMovies[1][4];
+
+// Alert a string with the full title of the first movie in the eightiesMovies array, but only using the eightiesMovies variable to access the correct values. Use the concatenation operator to unite the words into one string, and remember to be attentive to necessary whitespace!
+var movie1 = [16, "Candles"];
+var movie2 = [3, "Men", "and", "a", "Baby"];
+var eightiesMovies = [movie1, movie2];
+alert(eightiesMovies[0][0] + " " + eightiesMovies[0][1]);
