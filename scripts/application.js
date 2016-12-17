@@ -319,13 +319,38 @@
 // For switching off: "Generator #2 is now off, removing 62 MW, for a total of 0 MW!""
 // Note: You do not need to call the function. Build the function declaration without invoking it.
 
-function changePowerTotal(totalMW, currentGenID, currentGenStatus, currentGenMW){
-  if(currentGenStatus === "on"){
-    totalMW += currentGenMW;
-    alert("Generator #" + currentGenID + " is now on, adding " + currentGenMW + " MW, for a total of " + totalMW + " MW !");
-  } else if (currentGenStatus === "off") {
-    totalMW -= currentGenMW;
-    alert("Generator #" + currentGenID + " is now off, removing " + currentGenMW + " MW, for a total of " + totalMW + " MW!");
-  }
-  return totalMW;
-}
+// function changePowerTotal(totalMW, currentGenID, currentGenStatus, currentGenMW){
+//   if(currentGenStatus === "on"){
+//     totalMW += currentGenMW;
+//     alert("Generator #" + currentGenID + " is now on, adding " + currentGenMW + " MW, for a total of " + totalMW + " MW !");
+//   } else if (currentGenStatus === "off") {
+//     totalMW -= currentGenMW;
+//     alert("Generator #" + currentGenID + " is now off, removing " + currentGenMW + " MW, for a total of " + totalMW + " MW!");
+//   }
+//   return totalMW;
+// }
+
+// ARRAYS
+// Arrays can hold: strings, values, vars, other arrays, or combinations of these
+// Example:
+// var poisson = "fish";
+// var comboArray = ["Red", poisson, "Blue", poisson]; //results in: "Red", "fish", "Blue", "fish"
+
+// Array of arrays
+// var comboArray1 = ["One", "fish", 2, "fish"];
+// var comboArray2 = ["Red", "fish", "Blue", "fish"];
+// var arrayOfArrays = [comboArray1, comboArray2]; //becomes index 0 = ["One", "fish", 2, "fish"], index 1 = ["Red", "fish", "Blue", "fish"]
+// console.log(arrayOfArrays); //returns [Array[4], Array[4]]
+// console.log(arrayOfArrays[1]); //returns ["Red", "fish", "Blue", "fish"]
+// console.log(arrayOfArrays[1][2]); //returns "Blue"...[1] indicates the second index in arrayOfArrays (e.g. comboArray2), [2] indicates the third index in comboArray2
+
+// var rubyFam = ["Jason", "Christine", "Blue", "Lucy"];
+// rubyFam[2] = "Mush-mush"; //updates/changes the array item at the specified index number
+// console.log(rubyFam[0]); //logs the array item that exists at the specified index number
+// console.log(rubyFam.length); //returns number of indices within the array
+
+// Method: pop()
+// rubyFam.pop(); //deletes--or "pops"--the last item in the specified array while also returning the the last item in the array
+
+// Method: push()
+// rubyFam.push("Spot the Dog"); //inserts--or "pushes"--the specified new item into the array at the end of the array
