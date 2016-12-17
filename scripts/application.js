@@ -423,18 +423,42 @@
       // }
     // }
 
-function addPassenger(passengerName, passengerArray){
-  if(passengerArray.length === 0){
-    passengerArray.push(passengerName);
+var passengerList = [];
+addPassenger("Gregg Pollack", passengerList);
+addPassenger("Ashley Smith", passengerList);
+addPassenger("Jason Ruby", passengerList);
+deletePassenger("Ashley Smith", passengerList);
+addPassenger("Blue", passengerList);
+
+function addPassenger(name, list){
+  if(list.length === 0){
+    list.push(name);
   } else {
-    for(var i = 0; i < passengerArray.length; i++){
-      if(passengerArray[i] === undefined){
-        passengerArray[i] = passengerName;
-        return passengerArray;
-      } else if (i === passengerArray.length - 1) {
-          passengerArray.push(passengerName);
-          return passengerArray;
+    for(var i = 0; i < list.length; i++){
+      if(list[i] === undefined){
+        list[i] = name;
+        return list;
+      } else if (i === list.length - 1) {
+          list.push(name);
+          return list;
       }
     }
   }
 }
+function deletePassenger(name, list){
+  if(list.length === 0){
+    console.log("The passenger list is empty!");
+  } else {
+    for(var i = 0; i < list.length; i++){
+      if(list[i] === name){
+        list[i] = undefined;
+        return list;
+      } else if (i === list.length - 1) {
+        console.log("Passenger with that name not found!");
+
+      }
+    }
+  }
+  return list;
+}
+console.log(passengerList);
