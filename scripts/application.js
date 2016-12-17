@@ -393,15 +393,48 @@
 
 //FUNCTION USING ARRAYS
 //Counting even numbers while erasing odd numbers
-var numberList = [2, 5, 8, 4, 7, 12, 6, 9, 3, 11];
-var evenCount = 0;
-for(var i = 0; i < numberList.length; i++){
-  if(numberList[i] % 2 === 0){
-    evenCount++;
+// var numberList = [2, 5, 8, 4, 7, 12, 6, 9, 3, 11];
+// var evenCount = 0;
+// for(var i = 0; i < numberList.length; i++){
+//   if(numberList[i] % 2 === 0){
+//     evenCount++;
+//   } else {
+//     numberList[i] = undefined;
+//   }
+// }
+// console.log(evenCount);
+// console.log(numberList);
+// console.log(numberList.length);
+
+//Function to Build Passenger List
+// function addPassenger(namePassenger, arrayOfPassengers){
+  //if list is empty{
+    //add passenger to the list
+  // } else {
+      //for all spots on the list {
+          // if the current spot is empty {
+                //add the passenger to that spot
+                //return the list and exit the function
+        // }else, if the end of the list is reached {
+              // add passenger to end of the list
+              //return the list and exit the function
+            // }
+        // }
+      // }
+    // }
+
+function addPassenger(passengerName, passengerArray){
+  if(passengerArray.length === 0){
+    passengerArray.push(passengerName);
   } else {
-    numberList[i] = undefined;
+    for(var i = 0; i < passengerArray.length; i++){
+      if(passengerArray[i] === undefined){
+        passengerArray[i] = passengerName;
+        return passengerArray;
+      } else if (i === passengerArray.length - 1) {
+          passengerArray.push(passengerName);
+          return passengerArray;
+      }
+    }
   }
 }
-console.log(evenCount);
-console.log(numberList);
-console.log(numberList.length);
