@@ -52,18 +52,45 @@
 
 //fearGenerated(3,4,7);
 
-var fear = fearGenerated(numPeeps, rainInInches, numSharks);
+// var fear = fearGenerated(numPeeps, rainInInches, numSharks);
+//
+// var fearMessage = function() {
+//   if (fear < 200) {
+//     return confirm("Fear Level: LOW\nStill wanna ride?");
+//   } else if (fear >= 200 && fear <= 300) {
+//     return confirm("Fear Level: MEDIUM\nThink you'll make it?");
+//   }
+// };
+//
+// function confirmRide(confirmToGo) {
+//   return confirmToGo();
+// }
+//
+// var startRide = confirmRide(fearMessage);
 
-var fearMessage = function() {
-  if (fear < 200) {
-    return confirm("Fear Level: LOW\nStill wanna ride?");
-  } else if (fear >= 200 && fear <= 300) {
-    return confirm("Fear Level: MEDIUM\nThink you'll make it?");
-  }
-};
+// Function Expression with Arrays and map()
+// var numbers = [12, 4, 3, 9, 8, 6, 10, 1];
+// var results = numbers.map(function (arrayCell){
+//   return arrayCell * 2;
+// }
+// );
+// console.log(results);
 
-function confirmRide(confirmToGo) {
-  return confirmToGo();
+
+//Challenge: Function Expression with Arrays and map()
+// They want to take the passengers array and convert those subarrays into strings that contain the first and last name for each passenger.
+// 1. Create a modifiedNames variable to store our new data.
+// 2. Assign passengers.map() to the modifiedNames variable. This will allow us to pass in a function to be used on every element in the array.
+// 3. Pass an anonymous function to map().
+// 4. The anonymous function should take in arrayCell as a parameter and use that to return a string with the first and last name for a passenger. In other words, if you were to pass in a ["Jason", "Millhouse"] array, the function should return a "Jason Millhouse" string.
+
+
+var passengers = [ ["Thomas", "Meeks"],
+                   ["Gregg", "Pollack"],
+                   ["Christine", "Wong"],
+                   ["Dan", "McGaw"] ];
+var modifiedNames = passengers.map(function(arrayCell){
+  return arrayCell [0] + " " + arrayCell[1];
 }
-
-var startRide = confirmRide(fearMessage);
+);
+console.log(modifiedNames);
