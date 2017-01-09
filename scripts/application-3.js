@@ -77,7 +77,7 @@
 // console.log(results);
 
 
-//Challenge: Function Expression with Arrays and map()
+
 // They want to take the passengers array and convert those subarrays into strings that contain the first and last name for each passenger.
 // 1. Create a modifiedNames variable to store our new data.
 // 2. Assign passengers.map() to the modifiedNames variable. This will allow us to pass in a function to be used on every element in the array.
@@ -85,12 +85,32 @@
 // 4. The anonymous function should take in arrayCell as a parameter and use that to return a string with the first and last name for a passenger. In other words, if you were to pass in a ["Jason", "Millhouse"] array, the function should return a "Jason Millhouse" string.
 
 
-var passengers = [ ["Thomas", "Meeks"],
-                   ["Gregg", "Pollack"],
-                   ["Christine", "Wong"],
-                   ["Dan", "McGaw"] ];
-var modifiedNames = passengers.map(function(arrayCell){
-  return arrayCell [0] + " " + arrayCell[1];
-}
-);
-console.log(modifiedNames);
+// var modifiedNames = [ "Thomas Meeks",
+//                       "Gregg Pollack",
+//                       "Christine Wong",
+//                       "Dan McGaw" ];
+//
+// modifiedNames.map(function(name) {
+//   alert("Yo, " + name + "!");
+// });
+
+
+
+// The folks over at Poplar Puzzlers need an array of functions for one of their puzzles. They’ve requested your help in making the array, which they would like to be called puzzlers. The cells of the array should each contain a function, and these functions–well, what they return–are listed here in order. Each function has one parameter. Note input below represents the parameter, and you will need to convert the math formulas to JavaScript:
+//
+// 1. Returns 3 * input - 8
+// 2. Returns (input + 2)3
+// 3. Returns input2 - 9
+// 4. Returns input % 4
+// Use your knowledge of arrays and anonymous function expressions to build this array of functions.
+//
+// Note: Use parentheses with your return statements if you’re having trouble with the order of operations.
+
+// Make sure all the functions you’ve built contain a function keyword, accept an input, and are properly closed with correct syntax and semicolons.
+// You’ll need to establish an array called puzzlers and either build all the functions in the initial declaration, or add four functions into the array sequentially.
+var puzzlers = [
+  function(a) { return 3 * a - 8; },
+  function(a) { return (a + 2) * (a + 2) * (a + 2); },
+  function(a) { return a * a - 9; },
+  function(a) { return a % 4; }
+];
