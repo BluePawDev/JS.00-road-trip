@@ -472,12 +472,34 @@
   // 3. If the typeof the current array index value is equal to "string", then increment the count variable.
   // 4. Outside the for loop, return the count variable with the total amount of strings found.
 
-function numStrings(list){
-  var count = 0;
-  for(var i = 0; i < list.length; i++){
-    if(typeof list[i] === "string"){
-      count++;
-    }
+// function numStrings(list){
+//   var count = 0;
+//   for(var i = 0; i < list.length; i++){
+//     if(typeof list[i] === "string"){
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+var letterGrade;
+grade(62);
+console.log(letterGrade);
+
+function grade(score) {
+  if (score > 89) {
+    letterGrade = "A";
   }
-  return count;
+  if (score > 79) {
+    letterGrade = "B";
+  }
+  if (score > 69) {
+    letterGrade = "C";
+  }
+  if (score > 59) {
+    letterGrade = "D";
+  }
+  else {
+    letterGrade = "F";
+  }
 }
